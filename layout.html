@@ -1,0 +1,63 @@
+<head>
+  <title>TwitterWatch</title>
+</head>
+
+<template name="layout">
+  <div class="container">
+    <header>
+      {{> nav }}
+    </header>
+    <div class="jumbotron">
+    {{> yield}}
+  </div>
+  </div>
+</template>
+
+<template name='nav'>
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {{> navBrand}}
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          {{> navItems}}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Meteor & Bootstrap</a></li>
+          <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">Help</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</template>
+
+<template name="navBrand">
+  <a class="navbar-brand" href="{{pathFor 'home'}}">TwitterWatch</a>
+</template>
+
+<template name='navItems'>
+  <li class="{{ activeIfTemplateIs 'application' }}">
+    <a href="{{ pathFor 'application'}}">Application</a>
+  </li>
+  <li class="{{ activeIfTemplateIs 'instructions' }}">
+    <a href="{{ pathFor 'instructions'}}">Instructions</a>
+  </li>
+  <li class="{{ activeIfTemplateIs 'code' }}">
+    <a href="{{ pathFor 'code'}}">Code</a>
+  </li>
+  <li class="{{ activeIfTemplateIs 'articles' }}">
+    <a href="{{ pathFor 'articles'}}">Articles</a>
+  </li>
+  <li class="{{ activeIfTemplateIs 'about' }}">
+    <a href="{{ pathFor 'about'}}">About</a>
+  </li>
+</template>
