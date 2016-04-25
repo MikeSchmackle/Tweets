@@ -99,7 +99,7 @@ if (Meteor.isServer) {
 
         try {
 
-          var base64AuthToken = new Buffer("zveWoJ2L34fqWLWnkw2CqEfct:Nht95q49xmjU1EqOFDFJLdK1suHAbGW3bh4cTz4IgpvSR0xGgi").toString('base64');
+          var base64AuthToken = new Buffer("ADD TOKEN").toString('base64');
 
           /* Obatin Bearer Token */
           var auth_url = 'https://api.twitter.com/oauth2/token';
@@ -120,7 +120,7 @@ if (Meteor.isServer) {
           /* Obtain Twitter Feeds*/
 
           var bearer = 'bearer ' + Token_JSON.access_token;
-          var oAuth = 'OAuth oauth_consumer_key="zveWoJ2L34fqWLWnkw2CqEfct", oauth_nonce="5c9cf9502820ee56ed82d36f7f926936", oauth_signature="fSber5ID4I0zP70%2BhPR27bITLjs%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1427299928", oauth_token="46678339-3EZeUlyjqqQtgJMfzrTCzxa43Qp3ngUJcqHc7kCRF", oauth_version="1.0"'
+          var oAuth = 'OAuth oauth_consumer_key="ADD TOKEN", oauth_nonce="ADD TOKEN", oauth_signature="ADD TOKEN", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1427299928", oauth_token="46678339-3EZeUlyjqqQtgJMfzrTCzxa43Qp3ngUJcqHc7kCRF", oauth_version="1.0"'
 
           var Feeds_Result = HTTP.call("GET",url, {headers:{'Authorization':bearer}});
 
