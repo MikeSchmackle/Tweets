@@ -99,7 +99,7 @@ if (Meteor.isServer) {
 
         try {
 
-          var base64AuthToken = new Buffer("ADD TOKEN").toString('base64');
+          var base64AuthToken = new Buffer("zveWoJ2L34fqWLWnkw2CqEfct:Nht95q49xmjU1EqOFDFJLdK1suHAbGW3bh4cTz4IgpvSR0xGgi").toString('base64');
 
           /* Obatin Bearer Token */
           var auth_url = 'https://api.twitter.com/oauth2/token';
