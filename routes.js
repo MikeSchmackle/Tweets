@@ -13,5 +13,6 @@ Router.map(function () {
   this.route('articles');
   this.route('about');
   this.route('code');
+  this.route('whatsnew')
 
 });

@@ -120,8 +120,7 @@ if (Meteor.isServer) {
           /* Obtain Twitter Feeds*/
 
           var bearer = 'bearer ' + Token_JSON.access_token;
-          var oAuth = 'OAuth oauth_consumer_key="ADD TOKEN", oauth_nonce="ADD TOKEN", oauth_signature="ADD TOKEN", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1427299928", oauth_token="46678339-3EZeUlyjqqQtgJMfzrTCzxa43Qp3ngUJcqHc7kCRF", oauth_version="1.0"'
-
+          
           var Feeds_Result = HTTP.call("GET",url, {headers:{'Authorization':bearer}});
 
           var respJson = JSON.parse(Feeds_Result.content);
