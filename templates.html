@@ -91,3 +91,21 @@
   <h2>{{ title }}</h2>
   <p>{{ body }}</p>
 </template>
+
+<template name='admin'>
+    <header>
+        <h3>Whats New...</h3>
+        <div class="container">
+            <div class="row-fluid col-sm-12">
+              <div class="form-group has-success col-sm-6 pull-left">
+                <label for="aTitle">Title</label>
+                <input type="text" class="form-control" id="aTitle" placeholder="Enter a title" />
+                <label for="aContent">Content</label>
+                <textarea class="form-control" id="aContent" placeholder="Enter content" rows="3" ></textarea>
+                <br>
+                <input type="button" value="Save" id="btnSave" class="btn btn-success btn-xs"/>
+              </div>
+            </div>
+        </div>    
+      </header>
+</template>

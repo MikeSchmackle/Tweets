@@ -46,7 +46,7 @@
 
 <template name='navItems'>
     <li class="{{ activeIfTemplateIs 'whatsnew' }}">
-        <a href="{{ pathFor 'application'}}">Whats New</a>
+        <a href="{{ pathFor 'whatsnew'}}">Whats New</a>
       </li>
   <li class="{{ activeIfTemplateIs 'application' }}">
     <a href="{{ pathFor 'application'}}">Application</a>
@@ -60,6 +60,9 @@
   <li class="{{ activeIfTemplateIs 'articles' }}">
     <a href="{{ pathFor 'articles'}}">Articles</a>
   </li>
+  <li class="{{ activeIfTemplateIs 'admin' }}">
+      <a href="{{ pathFor 'admin'}}">Admin</a>
+    </li>
   <li class="{{ activeIfTemplateIs 'about' }}">
     <a href="{{ pathFor 'about'}}">About</a>
   </li>

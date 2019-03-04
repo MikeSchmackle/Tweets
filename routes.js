@@ -14,5 +14,6 @@ Router.map(function () {
   this.route('about');
   this.route('code');
   this.route('whatsnew')
+  this.route('admin')
 
 });
